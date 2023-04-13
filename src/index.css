@@ -1,13 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat+Alternates&family=Montserrat:ital,wght@0,500;0,600;1,500&family=Playfair+Display&family=Raleway:wght@600&family=Roboto&display=swap');
+
+/* ALL */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1E202B;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  padding: 15px 25px;
+  margin-top: 6%;
+  border: none;
+  border-radius: 30px;
+  background-color: #1E202B;
+  color: #fff;
+  outline: none;
+}
+
+
+/* NAVBAR */
+nav {
+  background-color: #1E202B;
+}
+
+nav .navbar-brand img {
+  width: 26% !important;
+}
+
+nav .logo-spa {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+nav .logo-par {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #ffffffc3;
+  margin-left: 1rem;
+}
+
+nav .nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff !important;
+}
+
+nav .nav-link:hover {
+  color: #009AD8 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #009AD8 !important;
+}
+/* END NAVBAR */
+#hero {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  height: 50vh;
+}
+
+#hero .search {
+  width: 75%;
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #262936 !important;
+  /* padding: 0px; */
+  position:absolute;
+  left: 0px;
+  right: 0px;
+  top: 120%;
+}
+
+footer .footer-par {
+  color: #ffffffaf;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 35px;
+  padding-bottom: 20px;
+}
+
+footer .social-icons {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+footer .social-icons .icon{
+  border-radius: 50%;
+  position: relative;
+  padding: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1e202b;
+}
+
+footer .social-icons .icon i {
+  color: #009bd8d2;
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 23%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.3s ease;
+}
+
+footer .social-icons .icon:hover {
+  background-color: #009AD8;
+}
+
+footer .social-icons .icon:hover i {
+  color: #fff;
+}
+/* END FOOTER */
+
+/* HEADER */
+.box {
+  background-color: #323544;
+  height: 100%;
+}
+
+/* BOX1 */
+.box-top {
+  background-color: #2D303D;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.box-top h5 {
+  font-size: 1rem;
+  color: #ffffffa9;
+}
+
+.box-body {
+  padding: 33px 27px 15px 27px;
+  background-color: #323544;
+  height: 67%;
+}
+.box-body img {
+  width: 100% !important;
+}
+
+.box-body p {
+  color: #ffffffb4;
+  font-size: 1.3rem;
+  /* margin-bottom: 9px !important; */
+}
+
+.temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.sunny {
+  color: #009ACA;
+  /* padding-top: 25px; */
+}
+
+.box-bottom {
+  background-color: #323544;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px 15px 30px;
+}
+
+.box-bottom .par {
+  color: #ffffffb4;
+}
+
+.box-bottom img {
+  width: 25px;
+}
+
+/* BOX2 */
+.box2 {
+  background-color: #262936cf;
+  height: 100%;
+}
+
+.box2-top {
+  background-color: #323544;
+  padding: 8px 10px;
+}
+
+.box2-top h5 {
+  font-size: 1rem;
+  color: #ffffffa9;
+}
+
+.box2-body {
+  padding: 77px;
+  height: 67%;
+}
+
+/* BOX3 */
+.box3 {
+  background-color: #323544;
+  height: 100%;
+}
+
+.box3-top {
+  background-color: #2D303D;
+  padding: 8px 10px;
+}
+
+.box3-top h5 {
+  font-size: 1rem;
+  color: #ffffffa9;
+}
+
+.box3-body {
+  background-color: #323544;
+  padding: 77px;
+  height: 87%;
+}
+
+.find {
+  display: grid;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    height: 100vh;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  .col-md-4 {
+    margin-top: 100px;
+  }
+  .box-bottom .row{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .box-bottom img {
+    width: 30px;
+  }
+  footer {
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    top: 200%;
+  }
+  .find {
+    display: grid;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+  }
+
 }
